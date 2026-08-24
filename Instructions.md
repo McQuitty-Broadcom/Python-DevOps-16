@@ -7,8 +7,8 @@
 
 ## 2.  Accessing the environment.
 - The system is located at https://sn.ws.broadcom.com
-- Your login: is mfwsuser16@demo.broadcom.com
-- The password is Handsonlab@2026
+- Your login: is _SNCUST016
+- The password is _SNCUST016
 
 One you log in, select the environment:
 ![simpleCommand](assets/content/login.png)
@@ -18,11 +18,13 @@ One you log in, select the environment:
 - You have been assigned a single set of login credentials for accessing all of the Mainframe resources on a remote z/OS LPAR which is hosted by Broadcom.
 
 - Your userid is CUST016.
-- Your password CUST016.
+- Your password _MFCUST016.
 
-Service                                                                                                                                                            Connection Information (Host:Port)
-z/OSMF                                                                                                                                                             TODO:1443
-CA Endevor                                                                                                                                                         TODO:6002
+| Service | Connection Information (Host:Port) |
+| ------- | ---------------------------------- |
+| z/OSMF     |  10.1.2.55:1443 |
+| CA Endevor |  10.1.2.55:6002 |
+
 
 This is just information for you.  The details have been stored in your zowe.config.json file for you.
 
@@ -66,7 +68,7 @@ If you have any issues with these commands, reach out to the instructions.
 - This is a batch application.  Once it is compiled, this application is ready to run.
 
 - To execute the application and see the output, we can call `zowe jobs`.
-  - `zowe jobs submit dataset CUST016.PUBLIC.JCL(NDRUNDOG) --vasc`
+  - `zowe jobs submit dataset _MFCUST016.PUBLIC.JCL(NDRUNDOG) --vasc`
 
 - `--vasc` is a great command when testing.  The output is displayed across your screen when the job completes.  For jobs like this one, we can see the job output and ensure the application runs. 
 
